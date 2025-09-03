@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Product</title>
+    <link rel="stylesheet" href="styles/home.css">
+  </head>
+  <body>
+    <div class="header">
+      <a href="home.html">Home</a>
+      <a class="cart-link" href="checkout.html">
+        <img class="cart-icon" src="images/shopping-cart.webp">
+        <div class="cart-quantity js-cart-quantity">0</div>
+      </a>
+    </div>
+    <div class="body">
+      <div class="product-container">
+        <h1>Add Name</h1>
+        <input type="text" class="js-new-name">
+        <h1>Add Price</h1>
+        <input type="number" class="js-new-price">
+        <button class="add-product-button js-add-product-button">
+          Add Product
+        </button>
+      </div>
+    </div>
+   
+    <script type="module" src="scripts/addProduct.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+body{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.products-grid{
+  margin-top: 60px;
+}
+.product-container{
+  border: 1px solid rgb(156, 156, 156);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.308);;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 250px;
+  margin: 15px;
+  border-radius: 4px;
+}
+.product-name{
+  padding-bottom: 60px;
+}
+.product-price{
+  padding-bottom: 30px;
+}
+.quantity-selector{
+background-color: rgb(240, 240, 240);
+border: 1px solid rgb(213, 217, 217);
+height: 30px;
+width: 40px;
+border-radius: 10px;
+margin-right: 5px;
+cursor: pointer;
+padding-left: 3px;
+}
+.product-add-button{
+  background-color: rgb(48, 93, 240);
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}
+.products-grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media screen and (max-width: 515px){
+  .products-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 516px) and (max-width: 772px){
+  .products-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 773px) and (max-width: 1030px){
+  .products-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1031px) and (max-width: 1288px){
+  .products-grid{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1289px) and (max-width: 1546px){
+  .products-grid{
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media screen and (min-width: 1547px) and (max-width: 1803px){
+  .products-grid{
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+.header{
+  width: 100%;
+  border: solid 1px black;
+  height: 60px;
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  top: 0px;
+  background-color: rgb(82, 90, 104);
+}
+.cart-icon{
+  width: 50px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.cart-quantity{
+  position: absolute;
+  top: 20px;
+  margin-left: 22px;
+  color: rgb(0, 0, 0);
+}
