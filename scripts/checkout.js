@@ -118,6 +118,7 @@ function UpdateProductQuantity(){
           RenderCartItems();
           UpdateOrderSummary();
           UpdateProductQuantity();
+          RemoveFromCart();
         });
       });
     });
