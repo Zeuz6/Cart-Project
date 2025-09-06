@@ -1,12 +1,12 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
+  background-image: linear-gradient(to right, rgb(255, 145, 0) , rgb(217, 255, 0));
 }
 .checkout-header{
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  align-items: center;
 }
 .center-side{
   display: flex;
@@ -50,6 +50,8 @@ body{
   border-radius: 4px;
   margin-bottom: 10px;
   padding: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.633);
 }
 .product-name,
 .product-price {
@@ -65,6 +67,8 @@ body{
   border-radius: 4px;
   padding: 10px;
   height: 145px;
+  background-color: white;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.633);
 }
 .payment-summary-row{
   display: flex;
@@ -108,4 +112,12 @@ body{
 .update-button:hover{
   color: blue;
   border-bottom: solid 1px ;
+}
+.index-link{
+  width: 120px;
+  padding-bottom: 10px;
+}
+.my-icon{
+  width: 120px;
+  padding-top: 10px;
 }
