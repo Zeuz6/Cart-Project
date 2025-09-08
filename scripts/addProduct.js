@@ -11,19 +11,24 @@ RenderCartQuantity();
 
 document.querySelector('.js-add-product-button')
   .addEventListener('click', () => {
-    let newName = document.querySelector('.js-new-name').value;
-    let newPrice = document.querySelector('.js-new-price').value;
+    let newNameInput = document.querySelector('.js-new-name');
+    let newPriceInput = document.querySelector('.js-new-price');
     
+    let newName = newNameInput.value;
+    let newPrice = newPriceInput.value;
+    
+    let count = products.length;
+
     products.push(
       { 
-        id: "prod-badmin-030", 
+        id: `prod-${newName}-0${count + 1}`, 
         name: `${newName}`, 
         priceCents: newPrice * 100
       }
     );
-    //console.log((parseInt(newPriceInt, 100)));
-    //newPrice.value = "";
-    //newName.value = "";
+
+    newPriceInput.value = null;
+    newNameInput.value = '';
 
     console.log(products);
     SaveToStorage();
